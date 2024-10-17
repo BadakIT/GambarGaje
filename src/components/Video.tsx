@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { Container } from "@/components/Container";
 
+{/* <Video videoId="J7NB-inBVC8" /> */}
+
 interface VideoProps {
   videoId: string;
 }
@@ -39,7 +41,7 @@ export function Video({ videoId }: Readonly<VideoProps>) {
         )}
         {playVideo && (
           <iframe
-            src={`#`}
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             className="w-full h-full aspect-video"

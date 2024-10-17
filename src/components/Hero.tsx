@@ -7,7 +7,7 @@ import testimony2 from "../../public/img/testimony2.jpg";
 export const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap">
+      <Container className="flex flex-col-reverse md:flex-row">
         <div
           className="flex items-center w-full lg:w-1/2 scroll-mt-40"
           id="home"
@@ -121,7 +121,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
+          <div>
             <Image
               src={heroimg}
               width="616"
@@ -139,8 +139,8 @@ export const Hero = () => {
           id="showcase"
         >
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Showcase from <span className="text-blue-700">Customer</span>{" "}
-            who have ordered
+            Showcase from <span className="text-blue-700">Customer</span> who
+            have ordered
           </div>
 
           <div className="flex flex-wrap justify-center mt-10 gap-6 items-center">

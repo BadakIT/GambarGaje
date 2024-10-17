@@ -14,8 +14,8 @@ export const Testimonials = () => {
         id="testimonial"
       >
         <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-8 rounded-2xl py-14 dark:bg-trueGray-800">
+            <p className="text-lg md:text-xl leading-normal ">
               Fast service and <Mark>satisfactory</Mark> results, the price is
               also cheap.
             </p>
@@ -28,8 +28,8 @@ export const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-8 rounded-2xl py-14 dark:bg-trueGray-800">
+            <p className="text-lg md:text-xl leading-normal ">
               I am very satisfied with the result, as it{" "}
               <Mark>can be implemented</Mark> for various crafts.
             </p>
@@ -42,8 +42,8 @@ export const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-8 rounded-2xl py-14 dark:bg-trueGray-800">
+            <p className="text-lg md:text-xl leading-normal ">
               the results are <Mark>great</Mark>, perfect for parting gifts and
               birthday presents.
             </p>
@@ -68,8 +68,8 @@ interface AvatarProps {
 
 function Avatar(props: Readonly<AvatarProps>) {
   return (
-    <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+    <div className="flex items-center justify-center mt-8 space-x-3">
+      <div className="flex-shrink-0 overflow-hidden rounded-full w-8 h-8 md:w-12 md:h-12">
         <Image
           src={props.image}
           width="40"
@@ -79,8 +79,10 @@ function Avatar(props: Readonly<AvatarProps>) {
         />
       </div>
       <div>
-        <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
+        <div className="text-sm md:text-lg font-medium">{props.name}</div>
+        <div className="text-sm md:text-lg text-gray-600 dark:text-gray-400">
+          {props.title}
+        </div>
       </div>
     </div>
   );
